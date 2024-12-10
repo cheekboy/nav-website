@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网址导航</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>工具导航 - 您的在线工具集合</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>我的导航</h1>
+    <!-- 头部区域 -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>工具导航</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="pages/ai.html">AI工具</a></li>
+                    <li><a href="pages/compress.html">图片压缩</a></li>
+                    <li><a href="pages/resize.html">调整大小</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main id="main-content">
-        <!-- 网站内容将通过JavaScript动态生成 -->
+    <!-- 主要内容区域 -->
+    <main class="main">
+        <div class="tools-grid">
+            <!-- 工具卡片 -->
+            <div class="tool-card">
+                <div class="tool-icon">
+                    <img src="icons/ai-image.svg" alt="AI绘图">
+                </div>
+                <h3>AI文生图</h3>
+                <p>通过文字描述生成独特的AI图像，激发创意灵感</p>
+                <a href="pages/ai.html" class="tool-link">立即使用</a>
+            </div>
+            
+            <div class="tool-card">
+                <div class="tool-icon">
+                    <img src="icons/compress.svg" alt="图片压缩">
+                </div>
+                <h3>图片压缩</h3>
+                <p>高效压缩图片文件大小，保持画质的同时优化加载速度</p>
+                <a href="pages/compress.html" class="tool-link">立即使用</a>
+            </div>
+        </div>
     </main>
 
-    <script src="js/data.js"></script>
-    <script src="js/main.js"></script>
+    <!-- 底部区域 -->
+    <footer class="footer">
+        <div class="copyright">
+            <p>© 2024 工具导航. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html> 

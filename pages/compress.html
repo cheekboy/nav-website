@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片压缩 - 工具导航</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/compress.css">
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>工具导航</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="ai.html">AI工具</a></li>
+                    <li><a href="compress.html" class="active">图片压缩</a></li>
+                    <li><a href="resize.html">调整大小</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main>
+        <div class="compress-container">
+            <h2 class="page-title">图片压缩</h2>
+            <p class="page-desc">支持 JPG、PNG 格式，最大 10MB</p>
+
+            <!-- 上传区域 -->
+            <div class="upload-area" id="uploadArea">
+                <input type="file" id="imageInput" accept="image/jpeg,image/png" multiple hidden>
+                <div class="upload-content">
+                    <img src="../icons/upload.svg" alt="上传" class="upload-icon">
+                    <p>点击或拖拽图片到这里</p>
+                    <p class="upload-tip">支持格式：JPG、PNG（可多选）</p>
+                </div>
+            </div>
+
+            <!-- 批量压缩设置 -->
+            <div class="compress-settings" id="compressSettings" style="display: none;">
+                <div class="quality-control">
+                    <label for="quality">压缩质量</label>
+                    <div class="quality-slider">
+                        <input type="range" id="quality" min="0" max="100" value="80">
+                        <span id="qualityValue">80%</span>
+                    </div>
+                </div>
+                <div class="batch-actions">
+                    <button id="compressAllBtn" class="action-btn">压缩全部</button>
+                    <button id="downloadAllBtn" class="action-btn">下载全部</button>
+                </div>
+            </div>
+
+            <!-- 图片列表区域 -->
+            <div class="images-list" id="imagesList" style="display: none;">
+                <h3>待处理图片</h3>
+                <div class="images-container" id="imagesContainer">
+                    <!-- 图片项会动态添加到这里 -->
+                </div>
+            </div>
+
+            <!-- 预览区域 -->
+            <div class="preview-area" id="previewArea" style="display: none;">
+                <div class="preview-container">
+                    <!-- 原图预览 -->
+                    <div class="preview-box">
+                        <h3>原图</h3>
+                        <div class="image-preview">
+                            <img id="originalPreview" alt="原图预览">
+                        </div>
+                        <div class="image-info">
+                            <p>大小：<span id="originalSize">0 KB</span></p>
+                            <p>尺寸：<span id="originalDimensions">0 x 0</span></p>
+                        </div>
+                    </div>
+
+                    <!-- 压缩后预览 -->
+                    <div class="preview-box">
+                        <h3>压缩后</h3>
+                        <div class="image-preview">
+                            <img id="compressedPreview" alt="压缩预览">
+                        </div>
+                        <div class="image-info">
+                            <p>大小：<span id="compressedSize">0 KB</span></p>
+                            <p>尺寸：<span id="compressedDimensions">0 x 0</span></p>
+                        </div>
+                        <button id="downloadBtn" class="download-btn">下载压缩图片</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 底部区域 -->
+    <footer class="footer">
+        <div class="copyright">
+            <p>© 2024 工具导航. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/compress.js"></script>
+</body>
+</html> 

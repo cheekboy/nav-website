@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 画布背景 -->
+    <rect x="8" y="12" width="48" height="40" rx="4" fill="#3498db"/>
+    
+    <!-- AI 符号 -->
+    <path d="M20 28L26 22M26 28L20 22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- 图像符号 -->
+    <rect x="32" y="22" width="12" height="12" rx="2" fill="white"/>
+    <circle cx="35" cy="25" r="1" fill="#3498db"/>
+    
+    <!-- 装饰线条 -->
+    <path d="M16 36H48" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+</svg> 
